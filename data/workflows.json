@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0.0",
+  "items": [
+    {
+      "id": "image-creation",
+      "title": "Image creation workflow",
+      "code": "01",
+      "steps": [
+        "Brief",
+        "Reference",
+        "Prompt construction",
+        "Generation",
+        "Review",
+        "Export"
+      ]
+    },
+    {
+      "id": "brand-visual-system",
+      "title": "Brand visual system",
+      "code": "02",
+      "steps": [
+        "Positioning",
+        "Visual DNA",
+        "Identity elements",
+        "Applications",
+        "Guidelines"
+      ]
+    },
+    {
+      "id": "material-visualisation",
+      "title": "Material visualisation",
+      "code": "03",
+      "steps": [
+        "Material definition",
+        "Physical properties",
+        "Lighting",
+        "Render",
+        "Texture archive"
+      ]
+    },
+    {
+      "id": "generative-art-pipeline",
+      "title": "Generative art pipeline",
+      "code": "04",
+      "steps": [
+        "Rules",
+        "Parameters",
+        "Iteration",
+        "Selection",
+        "Metadata",
+        "Output"
+      ]
+    }
+  ]
+}
