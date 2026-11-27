@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0.0",
+  "items": [
+    {
+      "id": "swiss-international",
+      "title": "Swiss International",
+      "description": "Grid-driven typography, precision, hierarchy and asymmetry."
+    },
+    {
+      "id": "brutalism",
+      "title": "Brutalism",
+      "description": "Raw structure, honest materials, mass and spatial tension."
+    },
+    {
+      "id": "bauhaus",
+      "title": "Bauhaus",
+      "description": "Geometric reduction, functional form and controlled colour."
+    },
+    {
+      "id": "minimalism",
+      "title": "Minimalism",
+      "description": "Essential elements, deliberate restraint and negative space."
+    },
+    {
+      "id": "industrial-editorial",
+      "title": "Industrial Editorial",
+      "description": "Technical language, engineered forms and tactile surfaces."
+    },
+    {
+      "id": "generative-systems",
+      "title": "Generative Systems",
+      "description": "Rule-based visual structures, parameters and variation."
+    }
+  ]
+}
