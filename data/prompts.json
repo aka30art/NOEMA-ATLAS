@@ -1,0 +1,185 @@
+{
+  "schemaVersion": "1.0.0",
+  "items": [
+    {
+      "id": "p01",
+      "title": "Brutalist Architecture",
+      "domainId": "3d-cg",
+      "description": "Monumental concrete architecture, strong geometry and raw material presence.",
+      "tags": [
+        "architecture",
+        "brutalist",
+        "concrete"
+      ],
+      "prompt": "A monumental brutalist architectural structure, raw board-formed concrete surfaces, interlocking geometric volumes, dramatic directional lighting, deep architectural shadows, high material fidelity, precise perspective, restrained acid-lime accent, editorial architectural photography, ultra-detailed.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1
+    },
+    {
+      "id": "p02",
+      "title": "Liquid Chrome Forms",
+      "domainId": "image",
+      "description": "Abstract liquid metal sculpture with reflective flowing surfaces.",
+      "tags": [
+        "material",
+        "chrome",
+        "abstract"
+      ],
+      "prompt": "An abstract sculptural form made from polished liquid chrome, fluid folds and tensioned reflective surfaces, controlled studio reflections, deep black environment, high contrast, macro material detail, sculptural composition, precision product-art photography.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1
+    },
+    {
+      "id": "p03",
+      "title": "Editorial Portrait",
+      "domainId": "photography",
+      "description": "Contemporary editorial portrait with cinematic directional lighting.",
+      "tags": [
+        "portrait",
+        "editorial",
+        "cinematic"
+      ],
+      "prompt": "Contemporary editorial portrait photograph, considered framing, tactile skin detail, sculptural directional light, restrained colour palette, authentic expression, subtle film grain, deep tonal separation, fashion publication art direction.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1
+    },
+    {
+      "id": "p04",
+      "title": "Automotive Concept",
+      "domainId": "design",
+      "description": "Futuristic vehicle concept with sculpted surfaces and studio reflections.",
+      "tags": [
+        "automotive",
+        "industrial",
+        "design"
+      ],
+      "prompt": "A forward-looking performance vehicle concept, sculpted aerodynamic bodywork, precise graphic lighting, dark studio environment, reflective mineral floor, tight editorial framing, restrained high-visibility lime detail, photorealistic automotive design visualisation.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1
+    },
+    {
+      "id": "p05",
+      "title": "Natural Forces",
+      "domainId": "image",
+      "description": "Dramatic natural energy captured with cinematic scale and atmosphere.",
+      "tags": [
+        "nature",
+        "motion",
+        "cinematic"
+      ],
+      "prompt": "A dramatic study of natural forces, immense ocean swell and turbulent atmosphere, precise texture in water and spray, cinematic scale, directional overcast light, strong negative space, high dynamic range photographic realism.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1
+    },
+    {
+      "id": "p06",
+      "title": "Geometric Abstraction",
+      "domainId": "generative-art",
+      "description": "Modular geometric forms and strict abstract composition.",
+      "tags": [
+        "geometry",
+        "abstract",
+        "system"
+      ],
+      "prompt": "A rigorous geometric abstract composition built from modular planes, repeated structural units, deliberate asymmetry, precise alignment, black and mineral concrete surfaces with a single acid-lime intervention, architectural graphic design, fine grain.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1
+    },
+    {
+      "id": "p07",
+      "title": "Neo Industrial City",
+      "domainId": "image",
+      "description": "Atmospheric industrial architecture and layered urban environments.",
+      "tags": [
+        "environment",
+        "industrial",
+        "city"
+      ],
+      "prompt": "A neo-industrial urban environment, layered infrastructure, exposed concrete and dark metal, volumetric atmospheric light, deep perspective, subtle acid-lime signals, cinematic environment concept art, tactile realism and controlled visual density.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1
+    },
+    {
+      "id": "p08",
+      "title": "Mineral Texture Study",
+      "domainId": "materials",
+      "description": "Detailed mineral surface with layered strata and granular detail.",
+      "tags": [
+        "texture",
+        "mineral",
+        "surface"
+      ],
+      "prompt": "A high-resolution macro material study of fractured mineral concrete, layered sediment, granular inclusions, subtle tonal shifts, directional raking light, physically plausible surface response, neutral industrial palette, seamless texture reference presentation.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1
+    },
+    {
+      "id": "p09",
+      "title": "Chromatic Architecture",
+      "domainId": "design",
+      "description": "Architectural volumes used as a controlled colour composition.",
+      "tags": [
+        "colour",
+        "architecture",
+        "graphic"
+      ],
+      "prompt": "Architectural geometric volumes arranged as a bold colour study, deep graphite planes, mineral concrete, controlled acid-lime and off-white colour blocks, hard directional light, disciplined Swiss editorial layout, balanced negative space.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1
+    },
+    {
+      "id": "p10",
+      "title": "Cinematic Motion Frame",
+      "domainId": "video",
+      "description": "A composed motion-design opening frame with directional movement.",
+      "tags": [
+        "motion",
+        "cinematic",
+        "video"
+      ],
+      "prompt": "A cinematic motion-design sequence concept, structural geometric elements moving through a dark architectural space, controlled directional blur, high-contrast lighting, restrained lime accents, deliberate camera movement, clean visual hierarchy.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1
+    },
+    {
+      "id": "p11",
+      "title": "Sound Atmosphere",
+      "domainId": "audio",
+      "description": "A layered atmospheric sound-design brief for an abstract environment.",
+      "tags": [
+        "sound",
+        "ambience",
+        "audio"
+      ],
+      "prompt": "Create an immersive industrial atmospheric soundscape with low mechanical drones, distant metallic resonance, granular textures, slow evolving spatial movement, restrained transient detail and a controlled cinematic dynamic range.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1
+    },
+    {
+      "id": "p12",
+      "title": "Technical Fashion Editorial",
+      "domainId": "design",
+      "description": "Technical apparel photographed with precise editorial composition.",
+      "tags": [
+        "fashion",
+        "editorial",
+        "technical"
+      ],
+      "prompt": "Technical fashion editorial featuring modular utility apparel, engineered panel construction, tactile industrial textiles, precise seam detailing, sculptural directional lighting, restrained palette, architectural studio set, premium contemporary magazine photography.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1
+    }
+  ]
+}
