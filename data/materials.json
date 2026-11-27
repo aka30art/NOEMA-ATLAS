@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0.0",
+  "items": [
+    {
+      "id": "raw-concrete",
+      "title": "Raw Concrete",
+      "description": "Porous mineral surface, board marks, aggregate and tonal irregularity."
+    },
+    {
+      "id": "brushed-aluminium",
+      "title": "Brushed Aluminium",
+      "description": "Linear machining marks, directional metallic reflection."
+    },
+    {
+      "id": "liquid-chrome",
+      "title": "Liquid Chrome",
+      "description": "Mirror-like fluid metal, stretched reflections and polished transitions."
+    },
+    {
+      "id": "carbon-fibre",
+      "title": "Carbon Fibre",
+      "description": "Woven technical composite with anisotropic sheen."
+    },
+    {
+      "id": "matte-ceramic",
+      "title": "Matte Ceramic",
+      "description": "Dense mineral finish, soft diffuse response and clean edges."
+    },
+    {
+      "id": "weathered-steel",
+      "title": "Weathered Steel",
+      "description": "Oxidised surface, patina, fine corrosion and layered colour."
+    }
+  ]
+}
