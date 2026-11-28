@@ -66,7 +66,7 @@ for (const [index, prompt] of allPrompts.entries()) {
   const titleKey = String(prompt.title || "").trim().toLowerCase();
   if (titleKeys.has(titleKey)) errors.push(`duplicate prompt title: "${prompt.title}"`);
   titleKeys.add(titleKey);
-  const bodyKey = String(prompt.prompt || "").toLowerCase().replace(/\\s+/g, " ").trim();
+  const bodyKey = String(prompt.prompt || "").toLowerCase().replace(/\s+/g, " ").trim();
   if (bodyKeys.has(bodyKey)) errors.push(`duplicate prompt body: "${prompt.id}"`);
   bodyKeys.add(bodyKey);
   for (const id of prompt.collectionIds || []) {
@@ -79,7 +79,7 @@ for (const [domainId, set] of domainPromptSets) {
   for (const prompt of set.items) {
     if (prompt.domainId !== domainId) errors.push(`data/prompts/${domainId}.json: prompt ${prompt.id} belongs to "${prompt.domainId}"`);
     if (prompt.status !== "published" || prompt.visibility !== "public") errors.push(`prompt ${prompt.id}: domain catalogue records must be published and public`);
-    const wordCount = String(prompt.prompt || "").trim().split(/\\s+/).filter(Boolean).length;
+    const wordCount = String(prompt.prompt || "").trim().split(/\s+/).filter(Boolean).length;
     if (wordCount < 55) errors.push(`prompt ${prompt.id}: domain catalogue prompt is too short (${wordCount} words)`);
     if (!Array.isArray(prompt.tags) || prompt.tags.length < 3) errors.push(`prompt ${prompt.id}: expected at least three descriptive tags`);
   }
