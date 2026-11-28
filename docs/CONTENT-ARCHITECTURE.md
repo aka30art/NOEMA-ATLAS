@@ -1,5 +1,16 @@
 # NOEMA ATLAS — Content Architecture
 
+## Phase 2B — Universal domains and specialist collections
+
+The catalogue separates two dimensions:
+
+- **Universal domains** classify the creative task: ART, PHOTO, VIDEO, AGENTS, MATERIALS, TEXTURES, EFFECTS, 3D & OBJECTS, DESIGN, WORLDS, AUDIO and GENERATIVE SYSTEMS.
+- **Specialist collections** group dedicated creative universes across domains. Initial specialist collections are ANIME & CARTOON and TOYS & COLLECTIBLES.
+
+A prompt has one canonical record and may be indexed into multiple collections through `collectionIds`. Each collection maintains the reciprocal `promptIds` index. The content validator checks both sides of this relationship. The library can filter by domain and collection without duplicating prompt records.
+
+The initial catalogue contains 50 published prompt records and six curated collections.
+
 ## Phase 2A.2
 
 This repository is the canonical source of public NOEMA ATLAS content. The application remains static and deploys through GitHub Pages. No external service or runtime backend is introduced.
