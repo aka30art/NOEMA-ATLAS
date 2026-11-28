@@ -2,52 +2,76 @@
   "schemaVersion": "1.0.0",
   "items": [
     {
-      "id": "image",
-      "name": "IMAGE",
-      "description": "Art, illustration, concepts and generative imagery",
+      "id": "art",
+      "name": "ART",
+      "description": "Illustration, fine art, concept art and generative imagery",
       "order": 1
+    },
+    {
+      "id": "photo",
+      "name": "PHOTO",
+      "description": "Editorial, commercial, product and cinematic photography",
+      "order": 2
     },
     {
       "id": "video",
       "name": "VIDEO",
-      "description": "Cinematic, motion design and storytelling",
-      "order": 2
-    },
-    {
-      "id": "3d-cg",
-      "name": "3D / CG",
-      "description": "Modelling, rendering and environments",
+      "description": "Cinematography, animation, motion design and sequences",
       "order": 3
     },
     {
-      "id": "audio",
-      "name": "AUDIO",
-      "description": "Music, sound design, voice and ambience",
+      "id": "agents",
+      "name": "AGENTS",
+      "description": "AI agents, system instructions, assistants and creative workflows",
       "order": 4
-    },
-    {
-      "id": "design",
-      "name": "DESIGN",
-      "description": "Graphic, brand, editorial and product design",
-      "order": 5
     },
     {
       "id": "materials",
       "name": "MATERIALS",
-      "description": "Surfaces, textures, finishes and PBR",
+      "description": "Physical materials, finishes, PBR response and material studies",
+      "order": 5
+    },
+    {
+      "id": "textures",
+      "name": "TEXTURES",
+      "description": "Surface patterns, seamless maps, displacement and micro-detail",
       "order": 6
     },
     {
-      "id": "photography",
-      "name": "PHOTOGRAPHY",
-      "description": "Editorial, commercial and cinematic stills",
+      "id": "effects",
+      "name": "EFFECTS",
+      "description": "Lighting, atmosphere, optical treatments and visual effects",
       "order": 7
     },
     {
-      "id": "generative-art",
-      "name": "GENERATIVE ART",
-      "description": "Systems, code and algorithmic art",
+      "id": "3d-objects",
+      "name": "3D & OBJECTS",
+      "description": "Modelling, rendering, product forms and dimensional assets",
       "order": 8
+    },
+    {
+      "id": "design",
+      "name": "DESIGN",
+      "description": "Graphic design, identity, typography, packaging and layouts",
+      "order": 9
+    },
+    {
+      "id": "worlds",
+      "name": "WORLDS",
+      "description": "Worldbuilding, environments, architecture and landscapes",
+      "order": 10
+    },
+    {
+      "id": "audio",
+      "name": "AUDIO",
+      "description": "Music, sound design, voice and spatial ambience",
+      "order": 11
+    },
+    {
+      "id": "generative-systems",
+      "name": "GENERATIVE SYSTEMS",
+      "description": "Procedural art, visual systems, code and parameterised outputs",
+      "order": 12
     }
   ]
 }
