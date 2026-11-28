@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [main]
   push:
-    branches: [main, feat/phase-2a-structured-content]
+    branches: [main, feat/phase-2a-structured-content, feat/phase-2b-atlas-catalogue]
   workflow_dispatch:
 
 permissions:
