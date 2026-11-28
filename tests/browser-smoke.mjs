@@ -42,9 +42,9 @@ try {
 
   await page.waitForFunction(() => document.querySelectorAll("#cards .card").length > 0);
   assert.equal(await page.title(), "NOEMA ATLAS");
-  assert.equal(await page.locator("#domains .domain").count(), 8, "all domains render");
-  assert.equal(await page.locator("#collections-home .collection").count(), 4, "all collections render");
-  assert.equal(await page.locator("#cards .card").count(), 12, "all published prompts render");
+  assert.equal(await page.locator("#domains .domain").count(), 12, "all domains render");
+  assert.equal(await page.locator("#collections-home .collection").count(), 6, "all collections render");
+  assert.equal(await page.locator("#cards .card").count(), 50, "all published prompts render");
   assert.equal(await page.locator("#lab-list .lab").count(), 30, "all creative lab references render");
   assert.equal(await page.locator("#workflow-list .lab").count(), 4, "all workflows render");
   assert.equal(datasetResponses.size, 7, "all seven JSON datasets load");
@@ -69,7 +69,13 @@ try {
   await page.locator("#search").fill("cinematic");
   await page.locator('nav button[data-view="library"]').click();
   const filteredCount = await page.locator("#cards .card").count();
-  assert.ok(filteredCount > 0 && filteredCount < 12, "global search filters the prompt library");
+  assert.ok(filteredCount > 0 && filteredCount < 50, "global search filters the prompt library");
+
+  await page.locator("#search").fill("");
+  await page.locator("#collection").selectOption("anime-cartoon");
+  assert.equal(await page.locator("#cards .card").count(), 10, "specialist Anime & Cartoon collection filters correctly");
+  await page.locator("#collection").selectOption("toys-collectibles");
+  assert.equal(await page.locator("#cards .card").count(), 10, "specialist Toys & Collectibles collection filters correctly");
   assert.deepEqual(pageErrors, [], "no uncaught browser errors");
   console.log("NOEMA ATLAS browser smoke passed: data rendering, prompt detail, save flow, builder, global search and zero page errors.");
 } finally {
