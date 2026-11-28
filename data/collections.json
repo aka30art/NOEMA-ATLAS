@@ -4,36 +4,91 @@
     {
       "id": "material-atlas",
       "title": "MATERIAL ATLAS",
-      "description": "Surfaces / textures / finishes",
+      "description": "Physical surfaces / textures / finishes / material studies",
       "code": "COL / 001",
+      "order": 1,
       "promptIds": [
-        "p08"
+        "p02",
+        "p08",
+        "p33",
+        "p34",
+        "p35"
       ]
     },
     {
       "id": "chromatic-systems",
       "title": "CHROMATIC SYSTEMS",
-      "description": "Palettes / colour / mood",
+      "description": "Palettes / colour relationships / chromatic composition",
       "code": "COL / 002",
+      "order": 2,
       "promptIds": [
-        "p09"
+        "p09",
+        "p36",
+        "p37"
       ]
     },
     {
       "id": "style-operators",
       "title": "STYLE OPERATORS",
-      "description": "Aesthetic / genre / era",
+      "description": "Aesthetic language / visual systems / art direction",
       "code": "COL / 003",
+      "order": 3,
       "promptIds": [
-        "p06"
+        "p06",
+        "p37",
+        "p50"
       ]
     },
     {
       "id": "creative-workflows",
       "title": "CREATIVE WORKFLOWS",
-      "description": "End-to-end / pipelines / use cases",
+      "description": "Briefing / agent systems / repeatable production pipelines",
       "code": "COL / 004",
-      "promptIds": []
+      "order": 4,
+      "promptIds": [
+        "p39",
+        "p40",
+        "p41",
+        "p48"
+      ]
+    },
+    {
+      "id": "anime-cartoon",
+      "title": "ANIME & CARTOON",
+      "description": "Dedicated animation, manga, cartoon and character-style prompt collection",
+      "code": "SPECIAL / 001",
+      "order": 5,
+      "promptIds": [
+        "p13",
+        "p14",
+        "p15",
+        "p16",
+        "p17",
+        "p18",
+        "p19",
+        "p20",
+        "p21",
+        "p22"
+      ]
+    },
+    {
+      "id": "toys-collectibles",
+      "title": "TOYS & COLLECTIBLES",
+      "description": "Designer toys / figures / plush / packaging / miniature displays",
+      "code": "SPECIAL / 002",
+      "order": 6,
+      "promptIds": [
+        "p23",
+        "p24",
+        "p25",
+        "p26",
+        "p27",
+        "p28",
+        "p29",
+        "p30",
+        "p31",
+        "p32"
+      ]
     }
   ]
 }
