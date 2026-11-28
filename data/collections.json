@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "items": [
+    {
+      "id": "material-atlas",
+      "title": "MATERIAL ATLAS",
+      "description": "Surfaces / textures / finishes",
+      "code": "COL / 001",
+      "promptIds": [
+        "p08"
+      ]
+    },
+    {
+      "id": "chromatic-systems",
+      "title": "CHROMATIC SYSTEMS",
+      "description": "Palettes / colour / mood",
+      "code": "COL / 002",
+      "promptIds": [
+        "p09"
+      ]
+    },
+    {
+      "id": "style-operators",
+      "title": "STYLE OPERATORS",
+      "description": "Aesthetic / genre / era",
+      "code": "COL / 003",
+      "promptIds": [
+        "p06"
+      ]
+    },
+    {
+      "id": "creative-workflows",
+      "title": "CREATIVE WORKFLOWS",
+      "description": "End-to-end / pipelines / use cases",
+      "code": "COL / 004",
+      "promptIds": []
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0.0",
+  "items": [
+    {
+      "id": "image",
+      "name": "IMAGE",
+      "description": "Art, illustration, concepts and generative imagery",
+      "order": 1
+    },
+    {
+      "id": "video",
+      "name": "VIDEO",
+      "description": "Cinematic, motion design and storytelling",
+      "order": 2
+    },
+    {
+      "id": "3d-cg",
+      "name": "3D / CG",
+      "description": "Modelling, rendering and environments",
+      "order": 3
+    },
+    {
+      "id": "audio",
+      "name": "AUDIO",
+      "description": "Music, sound design, voice and ambience",
+      "order": 4
+    },
+    {
+      "id": "design",
+      "name": "DESIGN",
+      "description": "Graphic, brand, editorial and product design",
+      "order": 5
+    },
+    {
+      "id": "materials",
+      "name": "MATERIALS",
+      "description": "Surfaces, textures, finishes and PBR",
+      "order": 6
+    },
+    {
+      "id": "photography",
+      "name": "PHOTOGRAPHY",
+      "description": "Editorial, commercial and cinematic stills",
+      "order": 7
+    },
+    {
+      "id": "generative-art",
+      "name": "GENERATIVE ART",
+      "description": "Systems, code and algorithmic art",
+      "order": 8
+    }
+  ]
+}

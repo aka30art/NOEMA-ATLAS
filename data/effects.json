@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.0.0",
+  "items": [
+    {
+      "id": "volumetric-light",
+      "title": "Volumetric Light",
+      "description": "Visible light shafts, atmospheric density and spatial depth."
+    },
+    {
+      "id": "halation",
+      "title": "Halation",
+      "description": "Soft highlight bloom around intense light sources."
+    },
+    {
+      "id": "chromatic-aberration",
+      "title": "Chromatic Aberration",
+      "description": "Controlled wavelength separation at high-contrast edges."
+    },
+    {
+      "id": "motion-blur",
+      "title": "Motion Blur",
+      "description": "Directional movement with deliberate shutter character."
+    },
+    {
+      "id": "film-grain",
+      "title": "Film Grain",
+      "description": "Fine photochemical texture and tonal cohesion."
+    },
+    {
+      "id": "optical-defocus",
+      "title": "Optical Defocus",
+      "description": "Selective focus falloff and atmospheric softness."
+    }
+  ]
+}

@@ -21,12 +21,12 @@ A responsive, dependency-free static web app for the NOEMA ATLAS creative prompt
 The workflow validates the app, uploads the Pages artifact and deploys it.
 
 ## Local preview
-Open `index.html` directly, or run `python3 -m http.server 8080` and visit `http://localhost:8080`.
+Run `python3 -m http.server 8080` from the repository root and visit `http://localhost:8080`. The app fetches its JSON catalogue over HTTP; opening `index.html` directly with `file://` is not supported.
 
 ## Project files
 - `index.html` — application shell and screens
 - `styles.css` — design tokens, layout and responsive components
-- `app.js` — navigation, search, prompt data, builder and local persistence
+- `app.js` — dataset loading, navigation, search, prompt builder and browser-local persistence
 - `.github/workflows/deploy.yml` — GitHub Pages deployment
 
 ## Scope and data
