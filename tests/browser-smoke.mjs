@@ -41,6 +41,7 @@ try {
   assert.equal(await page.locator("#lab-list .lab").count(), 30, "all creative lab references render");
   assert.match(await page.locator(".status").innerText(), /SYSTEM ONLINE/);
 
+  await page.locator('nav button[data-view="library"]').click();
   const firstCard = page.locator("#cards .card").first();
   const firstTitle = await firstCard.locator("h3").innerText();
   await firstCard.locator("[data-open]").click();
