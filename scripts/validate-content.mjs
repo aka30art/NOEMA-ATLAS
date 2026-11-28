@@ -64,12 +64,20 @@ for (const workflow of workflows.items) {
 }
 
 const app = fs.readFileSync(path.join(root, "app.js"), "utf8");
-for (const name of ["prompts", "domains", "collections", "materials", "effects", "styles", "workflows"]) {
-  if (!app.includes(`"./data/" + name + ".json"`)) errors.push(`app.js: runtime loader is missing ${name}.json`);
+const loaderStart = app.indexOf("async function loadContent()");
+const loaderEnd = app.indexOf("async function init()", loaderStart);
+if (loaderStart < 0 || loaderEnd < 0) {
+  errors.push("app.js: expected an async loadContent() runtime loader");
+} else {
+  const loader = app.slice(loaderStart, loaderEnd);
+  for (const name of ["prompts", "domains", "collections", "materials", "effects", "styles", "workflows"]) {
+    if (!loader.includes("\"" + name + "\"")) errors.push(`app.js: runtime loader is missing the ${name} dataset`);
+  }
+  if (!loader.includes('new URL("./data/" + name + ".json", document.baseURI)')) {
+    errors.push("app.js: datasets must resolve relative to document.baseURI for GitHub Pages project paths");
+  }
 }
-if (!app.includes('new URL("./data/" + name + ".json", document.baseURI)')) {
-  errors.push("app.js: datasets must resolve relative to document.baseURI for GitHub Pages project paths");
-}
+
 if (errors.length) {
   console.error("NOEMA ATLAS content validation failed:");
   for (const error of errors) console.error(`- ${error}`);
