@@ -73,7 +73,7 @@ if (loaderStart < 0 || loaderEnd < 0) {
   for (const name of ["prompts", "domains", "collections", "materials", "effects", "styles", "workflows"]) {
     if (!loader.includes("\"" + name + "\"")) errors.push(`app.js: runtime loader is missing the ${name} dataset`);
   }
-  if (!loader.includes('new URL("./data/" + name + ".json", document.baseURI)')) {
+  if (!/new URL\(["\']\.\/data\/["\']\s*\+\s*name\s*\+\s*["\']\.json["\']\s*,\s*document\.baseURI\)/.test(loader)) {
     errors.push("app.js: datasets must resolve relative to document.baseURI for GitHub Pages project paths");
   }
 }
