@@ -42,11 +42,14 @@ jobs:
           mkdir -p _site/data
           cp index.html styles.css app.js _site/
           cp data/*.json _site/data/
+          cp -R data/prompts _site/data/
           test -s _site/index.html
           test -s _site/styles.css
           test -s _site/app.js
           test "$(find _site/data -maxdepth 1 -type f -name '*.json' | wc -l)" -eq 7
-          test "$(find _site -type f | wc -l)" -eq 10
+          test "$(find _site/data/prompts -maxdepth 1 -type f -name '*.json' | wc -l)" -eq 12
+          test -s _site/data/prompts/art.json
+          test "$(find _site -type f | wc -l)" -eq 22
       - name: Upload Pages artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v5
