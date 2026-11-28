@@ -44,14 +44,26 @@ try {
   assert.equal(await page.title(), "NOEMA ATLAS");
   assert.equal(await page.locator("#domains .domain").count(), 12, "all domains render");
   assert.equal(await page.locator("#collections-home .collection").count(), 6, "all collections render");
-  assert.equal(await page.locator("#cards .card").count(), 50, "all published prompts render");
+  assert.equal(await page.locator("#cards .card").count(), 36, "library renders one page of prompts");
+  assert.equal(await page.locator("#count").innerText(), "2,400 MATCHING RECORDS", "all published prompts are indexed");
   assert.equal(await page.locator("#lab-list .lab").count(), 30, "all creative lab references render");
   assert.equal(await page.locator("#workflow-list .lab").count(), 4, "all workflows render");
-  assert.equal(datasetResponses.size, 7, "all seven JSON datasets load");
+  assert.equal(datasetResponses.size, 19, "all seven base datasets and twelve domain prompt datasets load");
   assert.ok([...datasetResponses].every(([url, status]) => url.startsWith("/NOEMA-ATLAS/data/") && status === 200), "datasets load from the GitHub Pages project path");
   assert.match(await page.locator(".status").innerText(), /SYSTEM ONLINE/);
 
   await page.locator('nav button[data-view="library"]').click();
+  const domainValues = await page.locator("#domain option").evaluateAll(options => options.map(option => option.value).filter(value => value !== "all"));
+  assert.equal(domainValues.length, 12, "all twelve domains are available");
+  for (const domain of domainValues) {
+    await page.locator("#domain").selectOption(domain);
+    assert.equal(await page.locator("#count").innerText(), "200 MATCHING RECORDS", `${domain} has at least 200 published prompts`);
+    assert.equal(await page.locator("#cards .card").count(), 36, `${domain} first page is paginated`);
+  }
+  await page.locator("#domain").selectOption("all");
+  await page.locator("#pagination [data-page=\"next\"]").click();
+  assert.match(await page.locator("#pagination .page-status").innerText(), /PAGE 2 \/ 67/);
+  await page.locator("#pagination [data-page=\"previous\"]").click();
   const firstCard = page.locator("#cards .card").first();
   const firstTitle = await firstCard.locator("h3").innerText();
   await firstCard.locator("[data-open]").click();
@@ -69,7 +81,7 @@ try {
   await page.locator("#search").fill("cinematic");
   await page.locator('nav button[data-view="library"]').click();
   const filteredCount = await page.locator("#cards .card").count();
-  assert.ok(filteredCount > 0 && filteredCount < 50, "global search filters the prompt library");
+  assert.ok(filteredCount > 0 && filteredCount < 36, "global search filters the current prompt page");
 
   await page.locator("#search").fill("");
   await page.locator("#collection").selectOption("anime-cartoon");

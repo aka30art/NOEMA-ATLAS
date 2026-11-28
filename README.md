@@ -6,8 +6,10 @@ A responsive, dependency-free static web app for the NOEMA ATLAS creative prompt
 
 ## Features
 - Discover dashboard and 12 universal creative domains: ART, PHOTO, VIDEO, AGENTS, MATERIALS, TEXTURES, EFFECTS, 3D & OBJECTS, DESIGN, WORLDS, AUDIO and GENERATIVE SYSTEMS
-- 50 published, searchable prompts across universal disciplines
+- 2,400 published, searchable prompts: at least 200 in each of the 12 universal domains
 - Six curated collections, including dedicated ANIME & CARTOON and TOYS & COLLECTIBLES specialist libraries
+- Domain catalogues are stored in separate JSON files and merged into one searchable library
+- Prompt library pagination renders 36 records per page
 - Cross-category collection indexing: one prompt record can appear in multiple relevant collections
 - Searchable and filterable prompt archive by domain, collection and tag
 - Prompt detail dialog with copy and save actions
