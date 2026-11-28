@@ -48,11 +48,17 @@ const workflows = dataset("data/workflows.json");
 
 const domainIds = new Set(domains.items.map((item) => item.id));
 const promptIds = new Set(prompts.items.map((item) => item.id));
+const collectionIds = new Set(collections.items.map((item) => item.id));
 const domainOrders = new Set();
 
 for (const [index, prompt] of prompts.items.entries()) {
   if (!promptSchema(prompt)) reportSchemaErrors(`data/prompts.json item ${index}`, promptSchema);
   if (!domainIds.has(prompt.domainId)) errors.push(`prompt ${prompt.id}: unknown domain "${prompt.domainId}"`);
+  for (const id of prompt.collectionIds || []) {
+    const collection = collections.items.find((item) => item.id === id);
+    if (!collection) errors.push(`prompt ${prompt.id}: unknown collection "${id}"`);
+    else if (!(collection.promptIds || []).includes(prompt.id)) errors.push(`prompt ${prompt.id}: collection "${id}" is missing its reciprocal promptIds reference`);
+  }
 }
 for (const [index, domain] of domains.items.entries()) {
   if (typeof domain.name !== "string" || !domain.name.trim()) errors.push(`domain ${domain.id}: missing name`);
@@ -65,6 +71,7 @@ for (const [index, collection] of collections.items.entries()) {
   if (!collectionSchema(collection)) reportSchemaErrors(`data/collections.json item ${index}`, collectionSchema);
   for (const id of collection.promptIds || []) {
     if (!promptIds.has(id)) errors.push(`collection ${collection.id}: unknown prompt "${id}"`);
+    else if (!(prompts.items.find((prompt) => prompt.id === id)?.collectionIds || []).includes(collection.id)) errors.push(`collection ${collection.id}: prompt "${id}" is missing its reverse collectionIds reference`);
   }
 }
 for (const [file, records] of [["materials", materials.items], ["effects", effects.items], ["styles", styles.items]]) {

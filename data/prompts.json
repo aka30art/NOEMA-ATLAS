@@ -4,7 +4,7 @@
     {
       "id": "p01",
       "title": "Brutalist Architecture",
-      "domainId": "3d-cg",
+      "domainId": "worlds",
       "description": "Monumental concrete architecture, strong geometry and raw material presence.",
       "tags": [
         "architecture",
@@ -14,12 +14,13 @@
       "prompt": "A monumental brutalist architectural structure, raw board-formed concrete surfaces, interlocking geometric volumes, dramatic directional lighting, deep architectural shadows, high material fidelity, precise perspective, restrained acid-lime accent, editorial architectural photography, ultra-detailed.",
       "status": "published",
       "visibility": "public",
-      "version": 1
+      "version": 1,
+      "collectionIds": []
     },
     {
       "id": "p02",
       "title": "Liquid Chrome Forms",
-      "domainId": "image",
+      "domainId": "art",
       "description": "Abstract liquid metal sculpture with reflective flowing surfaces.",
       "tags": [
         "material",
@@ -29,12 +30,15 @@
       "prompt": "An abstract sculptural form made from polished liquid chrome, fluid folds and tensioned reflective surfaces, controlled studio reflections, deep black environment, high contrast, macro material detail, sculptural composition, precision product-art photography.",
       "status": "published",
       "visibility": "public",
-      "version": 1
+      "version": 1,
+      "collectionIds": [
+        "material-atlas"
+      ]
     },
     {
       "id": "p03",
       "title": "Editorial Portrait",
-      "domainId": "photography",
+      "domainId": "photo",
       "description": "Contemporary editorial portrait with cinematic directional lighting.",
       "tags": [
         "portrait",
@@ -44,7 +48,8 @@
       "prompt": "Contemporary editorial portrait photograph, considered framing, tactile skin detail, sculptural directional light, restrained colour palette, authentic expression, subtle film grain, deep tonal separation, fashion publication art direction.",
       "status": "published",
       "visibility": "public",
-      "version": 1
+      "version": 1,
+      "collectionIds": []
     },
     {
       "id": "p04",
@@ -59,12 +64,13 @@
       "prompt": "A forward-looking performance vehicle concept, sculpted aerodynamic bodywork, precise graphic lighting, dark studio environment, reflective mineral floor, tight editorial framing, restrained high-visibility lime detail, photorealistic automotive design visualisation.",
       "status": "published",
       "visibility": "public",
-      "version": 1
+      "version": 1,
+      "collectionIds": []
     },
     {
       "id": "p05",
       "title": "Natural Forces",
-      "domainId": "image",
+      "domainId": "worlds",
       "description": "Dramatic natural energy captured with cinematic scale and atmosphere.",
       "tags": [
         "nature",
@@ -74,12 +80,13 @@
       "prompt": "A dramatic study of natural forces, immense ocean swell and turbulent atmosphere, precise texture in water and spray, cinematic scale, directional overcast light, strong negative space, high dynamic range photographic realism.",
       "status": "published",
       "visibility": "public",
-      "version": 1
+      "version": 1,
+      "collectionIds": []
     },
     {
       "id": "p06",
       "title": "Geometric Abstraction",
-      "domainId": "generative-art",
+      "domainId": "generative-systems",
       "description": "Modular geometric forms and strict abstract composition.",
       "tags": [
         "geometry",
@@ -89,12 +96,15 @@
       "prompt": "A rigorous geometric abstract composition built from modular planes, repeated structural units, deliberate asymmetry, precise alignment, black and mineral concrete surfaces with a single acid-lime intervention, architectural graphic design, fine grain.",
       "status": "published",
       "visibility": "public",
-      "version": 1
+      "version": 1,
+      "collectionIds": [
+        "style-operators"
+      ]
     },
     {
       "id": "p07",
       "title": "Neo Industrial City",
-      "domainId": "image",
+      "domainId": "worlds",
       "description": "Atmospheric industrial architecture and layered urban environments.",
       "tags": [
         "environment",
@@ -104,7 +114,8 @@
       "prompt": "A neo-industrial urban environment, layered infrastructure, exposed concrete and dark metal, volumetric atmospheric light, deep perspective, subtle acid-lime signals, cinematic environment concept art, tactile realism and controlled visual density.",
       "status": "published",
       "visibility": "public",
-      "version": 1
+      "version": 1,
+      "collectionIds": []
     },
     {
       "id": "p08",
@@ -119,7 +130,10 @@
       "prompt": "A high-resolution macro material study of fractured mineral concrete, layered sediment, granular inclusions, subtle tonal shifts, directional raking light, physically plausible surface response, neutral industrial palette, seamless texture reference presentation.",
       "status": "published",
       "visibility": "public",
-      "version": 1
+      "version": 1,
+      "collectionIds": [
+        "material-atlas"
+      ]
     },
     {
       "id": "p09",
@@ -134,7 +148,10 @@
       "prompt": "Architectural geometric volumes arranged as a bold colour study, deep graphite planes, mineral concrete, controlled acid-lime and off-white colour blocks, hard directional light, disciplined Swiss editorial layout, balanced negative space.",
       "status": "published",
       "visibility": "public",
-      "version": 1
+      "version": 1,
+      "collectionIds": [
+        "chromatic-systems"
+      ]
     },
     {
       "id": "p10",
@@ -149,7 +166,8 @@
       "prompt": "A cinematic motion-design sequence concept, structural geometric elements moving through a dark architectural space, controlled directional blur, high-contrast lighting, restrained lime accents, deliberate camera movement, clean visual hierarchy.",
       "status": "published",
       "visibility": "public",
-      "version": 1
+      "version": 1,
+      "collectionIds": []
     },
     {
       "id": "p11",
@@ -164,12 +182,13 @@
       "prompt": "Create an immersive industrial atmospheric soundscape with low mechanical drones, distant metallic resonance, granular textures, slow evolving spatial movement, restrained transient detail and a controlled cinematic dynamic range.",
       "status": "published",
       "visibility": "public",
-      "version": 1
+      "version": 1,
+      "collectionIds": []
     },
     {
       "id": "p12",
       "title": "Technical Fashion Editorial",
-      "domainId": "design",
+      "domainId": "photo",
       "description": "Technical apparel photographed with precise editorial composition.",
       "tags": [
         "fashion",
@@ -179,7 +198,677 @@
       "prompt": "Technical fashion editorial featuring modular utility apparel, engineered panel construction, tactile industrial textiles, precise seam detailing, sculptural directional lighting, restrained palette, architectural studio set, premium contemporary magazine photography.",
       "status": "published",
       "visibility": "public",
-      "version": 1
+      "version": 1,
+      "collectionIds": []
+    },
+    {
+      "id": "p13",
+      "title": "Modern Cel Animation Character",
+      "domainId": "art",
+      "description": "A clean character design using confident modern cel-animation language.",
+      "tags": [
+        "anime",
+        "cartoon",
+        "cel-shading"
+      ],
+      "prompt": "Design an original animated character with expressive silhouette, clean contour hierarchy, controlled cel shading, two-step shadow shapes, deliberate colour blocking, readable facial features, dynamic but balanced pose, polished animation key-art presentation.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "anime-cartoon"
+      ]
+    },
+    {
+      "id": "p14",
+      "title": "Retro Anime Key Visual",
+      "domainId": "art",
+      "description": "A nostalgic hand-drawn animation key visual with analogue finish.",
+      "tags": [
+        "anime",
+        "retro",
+        "1980s"
+      ],
+      "prompt": "Create an original retro-inspired Japanese animation key visual, expressive hand-drawn linework, carefully simplified facial planes, painted background, limited warm-cool palette, subtle analogue grain, dramatic perspective and authentic cel-animation finish.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "anime-cartoon"
+      ]
+    },
+    {
+      "id": "p15",
+      "title": "Manga Ink Splash Page",
+      "domainId": "art",
+      "description": "High-impact monochrome manga composition with deliberate panel rhythm.",
+      "tags": [
+        "manga",
+        "ink",
+        "black-and-white"
+      ],
+      "prompt": "Compose an original manga splash page in monochrome ink, expressive brush contours, varied line weight, speed lines, dense blacks, carefully controlled screentone, cinematic panel rhythm and a clear focal hierarchy; no lettering or speech bubbles.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "anime-cartoon"
+      ]
+    },
+    {
+      "id": "p16",
+      "title": "Chibi Character Sheet",
+      "domainId": "art",
+      "description": "A compact character turnaround with simplified proportions.",
+      "tags": [
+        "anime",
+        "chibi",
+        "character-sheet"
+      ],
+      "prompt": "Create an original chibi character reference sheet with oversized head, compact body, clear silhouette, front three-quarter and side views, consistent proportions, expressive face variations, clean flat colours and a neutral reference background.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "anime-cartoon"
+      ]
+    },
+    {
+      "id": "p17",
+      "title": "Mecha Design Blueprint",
+      "domainId": "design",
+      "description": "A functional mechanical character design with readable engineering.",
+      "tags": [
+        "anime",
+        "mecha",
+        "blueprint"
+      ],
+      "prompt": "Develop an original humanoid mecha design with articulated joints, layered armour plates, visible mechanical logic, restrained warning markings, front and side orthographic views, proportion callouts and a clean technical blueprint layout.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "anime-cartoon"
+      ]
+    },
+    {
+      "id": "p18",
+      "title": "Shojo-Inspired Portrait",
+      "domainId": "art",
+      "description": "A delicate expressive portrait with decorative visual rhythm.",
+      "tags": [
+        "anime",
+        "portrait",
+        "shojo"
+      ],
+      "prompt": "Illustrate an original romantic animation portrait with elegant facial expression, flowing hair shapes, refined linework, delicate highlights, subtle decorative motifs, luminous but restrained colour and a composed editorial crop.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "anime-cartoon"
+      ]
+    },
+    {
+      "id": "p19",
+      "title": "Western Cartoon Model Sheet",
+      "domainId": "art",
+      "description": "A flexible original cartoon character designed for animation.",
+      "tags": [
+        "cartoon",
+        "model-sheet",
+        "western-animation"
+      ],
+      "prompt": "Create an original western cartoon character model sheet with clear shape language, exaggerated but consistent proportions, front side and three-quarter views, mouth and eye expression studies, bold outlines and flat production-ready colours.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "anime-cartoon"
+      ]
+    },
+    {
+      "id": "p20",
+      "title": "Rubber-Hose Cartoon Motion",
+      "domainId": "video",
+      "description": "A vintage-inspired animation action pose and motion concept.",
+      "tags": [
+        "cartoon",
+        "rubber-hose",
+        "animation"
+      ],
+      "prompt": "Create a short looping rubber-hose animation concept featuring an original character, elastic limbs, rhythmic squash and stretch, graphic silhouette, simple staging, vintage-inspired monochrome accents and clean frame-to-frame continuity.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "anime-cartoon"
+      ]
+    },
+    {
+      "id": "p21",
+      "title": "Stop-Motion Felt Character",
+      "domainId": "art",
+      "description": "A tactile handcrafted character with miniature-set charm.",
+      "tags": [
+        "cartoon",
+        "stop-motion",
+        "felt"
+      ],
+      "prompt": "Design an original stop-motion character made from felt, wool and handmade fabric, visible stitching, tactile fibres, imperfect handcrafted edges, expressive eyes, soft miniature studio lighting and a charming physical presence.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "anime-cartoon"
+      ]
+    },
+    {
+      "id": "p22",
+      "title": "Saturday-Morning Cartoon Scene",
+      "domainId": "art",
+      "description": "A bright graphic scene built around readable staging.",
+      "tags": [
+        "cartoon",
+        "retro",
+        "environment"
+      ],
+      "prompt": "Illustrate an original Saturday-morning cartoon scene with bold silhouettes, energetic perspective, simplified architectural shapes, expressive environmental details, bright controlled palette, clean outlines and clear foreground-midground-background separation.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "anime-cartoon"
+      ]
+    },
+    {
+      "id": "p23",
+      "title": "Designer Vinyl Figure",
+      "domainId": "3d-objects",
+      "description": "A premium collectible figure with simplified sculptural character design.",
+      "tags": [
+        "toy",
+        "vinyl",
+        "collectible"
+      ],
+      "prompt": "Render an original designer vinyl collectible figure with a distinctive sculptural silhouette, smooth matte vinyl, precise moulded details, controlled studio reflections, neutral seamless backdrop, premium product lighting and front three-quarter presentation.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "toys-collectibles"
+      ]
+    },
+    {
+      "id": "p24",
+      "title": "Blind-Box Figure Series",
+      "domainId": "3d-objects",
+      "description": "A cohesive family of collectible figures designed as a series.",
+      "tags": [
+        "toy",
+        "blind-box",
+        "series"
+      ],
+      "prompt": "Develop a cohesive blind-box collectible figure series of six original characters, shared scale and material language, distinct silhouettes and colour identities, consistent product photography, arranged as a premium retail collection.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "toys-collectibles"
+      ]
+    },
+    {
+      "id": "p25",
+      "title": "Articulated Action Figure",
+      "domainId": "3d-objects",
+      "description": "A production-aware action figure with visible articulation.",
+      "tags": [
+        "toy",
+        "action-figure",
+        "engineering"
+      ],
+      "prompt": "Design an original premium action figure with functional articulation at shoulders, elbows, wrists, hips, knees and ankles, layered costume components, interchangeable hands, realistic joint engineering and a clean collector product render.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "toys-collectibles"
+      ]
+    },
+    {
+      "id": "p26",
+      "title": "Museum-Grade Collectible Statue",
+      "domainId": "3d-objects",
+      "description": "A high-end display statue with sculptural finish and display base.",
+      "tags": [
+        "collectible",
+        "statue",
+        "sculpture"
+      ],
+      "prompt": "Create a museum-grade collectible statue of an original fantasy subject, intricate sculpted surface detail, layered material finishes, carefully engineered support structure, premium display plinth, dramatic but readable studio lighting.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "toys-collectibles"
+      ]
+    },
+    {
+      "id": "p27",
+      "title": "Plush Character Prototype",
+      "domainId": "3d-objects",
+      "description": "A manufacturable plush character with soft material definition.",
+      "tags": [
+        "toy",
+        "plush",
+        "soft-toy"
+      ],
+      "prompt": "Design an original plush collectible with simplified sewn pattern pieces, soft pile fabric, embroidered facial details, visible seam placement, stable sitting proportions, manufacturable construction and clean catalogue photography.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "toys-collectibles"
+      ]
+    },
+    {
+      "id": "p28",
+      "title": "Die-Cast Vehicle Collectible",
+      "domainId": "3d-objects",
+      "description": "A miniature vehicle collectible with precise paint and metal finish.",
+      "tags": [
+        "toy",
+        "die-cast",
+        "vehicle"
+      ],
+      "prompt": "Render a premium 1:64 scale die-cast vehicle collectible, accurate miniature proportions, crisp tampo graphics, metallic paint, transparent glazing, detailed wheels, realistic casting seams and neutral collector display lighting.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "toys-collectibles"
+      ]
+    },
+    {
+      "id": "p29",
+      "title": "Premium Toy Packaging",
+      "domainId": "design",
+      "description": "A shelf-ready packaging system for a collectible figure.",
+      "tags": [
+        "toy",
+        "packaging",
+        "retail"
+      ],
+      "prompt": "Design premium collectible toy packaging with a strong front-panel hierarchy, clear product window, restrained typography, series identification, colour-coded edition marker, side-panel character artwork and a practical retail-ready dieline presentation.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "toys-collectibles"
+      ]
+    },
+    {
+      "id": "p30",
+      "title": "Blister-Pack Collectible",
+      "domainId": "photo",
+      "description": "A retail blister pack photographed as a premium product.",
+      "tags": [
+        "toy",
+        "blister-pack",
+        "product-photo"
+      ],
+      "prompt": "Photograph an original collectible action figure inside a clear blister pack on a printed backing card, realistic plastic reflections, crisp typography, accurate scale cues, controlled glare and premium retail catalogue lighting.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "toys-collectibles"
+      ]
+    },
+    {
+      "id": "p31",
+      "title": "Miniature Diorama Display",
+      "domainId": "3d-objects",
+      "description": "A small-scale scene built for a collectible display.",
+      "tags": [
+        "toy",
+        "diorama",
+        "miniature"
+      ],
+      "prompt": "Create a highly detailed miniature diorama for a collectible figure, layered scenic depth, convincing scale texture, hand-finished props, integrated display base, controlled focal lighting and a clean three-quarter collector presentation.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "toys-collectibles"
+      ]
+    },
+    {
+      "id": "p32",
+      "title": "Toy Photography Campaign",
+      "domainId": "photo",
+      "description": "A dynamic studio campaign image for a collectible toy.",
+      "tags": [
+        "toy",
+        "photography",
+        "campaign"
+      ],
+      "prompt": "Create a premium toy photography campaign featuring an original collectible figure, miniature practical set, dramatic scale illusion, carefully controlled rim light, tactile surface detail, energetic composition and polished commercial art direction.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "toys-collectibles"
+      ]
+    },
+    {
+      "id": "p33",
+      "title": "Seamless Concrete Texture",
+      "domainId": "textures",
+      "description": "A tileable industrial surface map with no visible seams.",
+      "tags": [
+        "texture",
+        "seamless",
+        "concrete"
+      ],
+      "prompt": "Generate a perfectly seamless square concrete texture, evenly distributed mineral aggregate, subtle pores and micro-cracks, neutral diffuse lighting, no cast shadows, no perspective, no vignette, uniform scale and physically plausible surface detail.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "material-atlas"
+      ]
+    },
+    {
+      "id": "p34",
+      "title": "Brushed Metal Material",
+      "domainId": "materials",
+      "description": "A physically plausible brushed metal surface reference.",
+      "tags": [
+        "material",
+        "metal",
+        "pbr"
+      ],
+      "prompt": "Create a neutral material reference of brushed aluminium, fine directional machining lines, anisotropic reflection, subtle micro-scratches, accurate metallic response, flat evenly lit presentation and no surrounding objects.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "material-atlas"
+      ]
+    },
+    {
+      "id": "p35",
+      "title": "Fabric Weave Macro",
+      "domainId": "textures",
+      "description": "A close-up textile surface with repeatable woven structure.",
+      "tags": [
+        "texture",
+        "fabric",
+        "macro"
+      ],
+      "prompt": "Produce a high-resolution macro study of a technical woven textile, visible warp and weft structure, subtle fibre variation, consistent repeat scale, soft raking light and a neutral colour-managed reference presentation.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "material-atlas"
+      ]
+    },
+    {
+      "id": "p36",
+      "title": "Chromatic Palette Architecture",
+      "domainId": "design",
+      "description": "A modular colour system applied to a geometric composition.",
+      "tags": [
+        "colour",
+        "palette",
+        "system"
+      ],
+      "prompt": "Construct a modular architectural colour study using a disciplined four-role palette: dominant 55 percent, disruptor 25 percent, counterpoint 15 percent and accent 5 percent; preserve legibility, balance and clear colour relationships.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "chromatic-systems"
+      ]
+    },
+    {
+      "id": "p37",
+      "title": "Colour-Field Geometry",
+      "domainId": "art",
+      "description": "A reduced abstract artwork based on colour relationships.",
+      "tags": [
+        "abstract",
+        "colour-field",
+        "geometry"
+      ],
+      "prompt": "Create a precise colour-field composition from a small number of geometric planes, deliberate proportion, controlled edge relationships, balanced negative space, flat matte surfaces and a coherent chromatic hierarchy.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "chromatic-systems",
+        "style-operators"
+      ]
+    },
+    {
+      "id": "p38",
+      "title": "Optical Light Refraction",
+      "domainId": "effects",
+      "description": "A controlled light effect study through transparent material.",
+      "tags": [
+        "effect",
+        "refraction",
+        "glass"
+      ],
+      "prompt": "Visualise controlled optical refraction through thick transparent glass, physically plausible bending and dispersion, precise caustic highlights, dark neutral environment, crisp material boundaries and no excessive bloom.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": []
+    },
+    {
+      "id": "p39",
+      "title": "Creative Director Agent",
+      "domainId": "agents",
+      "description": "A structured agent prompt for turning briefs into creative direction.",
+      "tags": [
+        "agent",
+        "creative-direction",
+        "system-prompt"
+      ],
+      "prompt": "You are a senior creative director. Convert the user's brief into a concise creative strategy, identify audience and intended outcome, propose three differentiated directions, define visual principles, flag missing constraints and produce an actionable production brief. Do not invent user requirements.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "creative-workflows"
+      ]
+    },
+    {
+      "id": "p40",
+      "title": "Prompt Refinement Agent",
+      "domainId": "agents",
+      "description": "An agent workflow for improving prompts without losing intent.",
+      "tags": [
+        "agent",
+        "prompt-engineering",
+        "workflow"
+      ],
+      "prompt": "Act as a prompt editor. Preserve the user's subject and intent, identify ambiguity, separate subject, medium, style, composition, lighting and technical constraints, then return one refined prompt and a short change log. Never add contradictory instructions.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "creative-workflows"
+      ]
+    },
+    {
+      "id": "p41",
+      "title": "Procedural Pattern System",
+      "domainId": "generative-systems",
+      "description": "A parameterised repeat pattern with controlled variation.",
+      "tags": [
+        "generative",
+        "pattern",
+        "procedural"
+      ],
+      "prompt": "Design a procedural pattern system with adjustable scale, rotation, density, spacing and seed. Maintain consistent geometry, controlled variation, seamless tiling and reproducible outputs; document the parameter ranges and visual effect of each control.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "creative-workflows"
+      ]
+    },
+    {
+      "id": "p42",
+      "title": "Cinematic Environment Sequence",
+      "domainId": "video",
+      "description": "A short shot sequence that establishes a coherent environment.",
+      "tags": [
+        "video",
+        "cinematic",
+        "sequence"
+      ],
+      "prompt": "Plan a six-shot cinematic environment sequence with establishing wide, directional movement, detail insert, reveal, character-scale reference and closing composition. Maintain spatial continuity, consistent lighting logic and deliberate camera language.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": []
+    },
+    {
+      "id": "p43",
+      "title": "Product Turntable Render",
+      "domainId": "3d-objects",
+      "description": "A clean multi-angle render sequence for a designed object.",
+      "tags": [
+        "3d",
+        "product",
+        "turntable"
+      ],
+      "prompt": "Create a studio turntable render of an original designed object, consistent camera distance and focal length, neutral background, accurate contact shadow, stable exposure and evenly spaced rotational views for product evaluation.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": []
+    },
+    {
+      "id": "p44",
+      "title": "Architectural Worldbuilding",
+      "domainId": "worlds",
+      "description": "A coherent fictional built environment with functional logic.",
+      "tags": [
+        "worldbuilding",
+        "architecture",
+        "environment"
+      ],
+      "prompt": "Develop a believable fictional urban district with a clear climate, material culture, infrastructure logic, building typologies, circulation routes and human-scale details. Present a wide establishing view and a concise environmental design rationale.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": []
+    },
+    {
+      "id": "p45",
+      "title": "Graphic Identity System",
+      "domainId": "design",
+      "description": "A scalable visual identity with a consistent design grammar.",
+      "tags": [
+        "branding",
+        "identity",
+        "graphic-design"
+      ],
+      "prompt": "Develop a complete visual identity system for a fictional contemporary studio: logo construction principles, typography hierarchy, colour palette, graphic devices, layout grid and three realistic applications. Prioritise consistency and reproducibility.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": []
+    },
+    {
+      "id": "p46",
+      "title": "Spatial Sound Environment",
+      "domainId": "audio",
+      "description": "A layered spatial audio brief for an immersive environment.",
+      "tags": [
+        "audio",
+        "spatial",
+        "sound-design"
+      ],
+      "prompt": "Compose a spatial sound environment with a stable low-frequency foundation, distinct near and distant layers, controlled transient events, evolving movement and clear frequency separation. Specify the listener position and intended emotional effect.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": []
+    },
+    {
+      "id": "p47",
+      "title": "Atmospheric Fog and Light",
+      "domainId": "effects",
+      "description": "A physically legible atmosphere with layered depth.",
+      "tags": [
+        "effects",
+        "fog",
+        "lighting"
+      ],
+      "prompt": "Create an atmospheric scene with physically coherent volumetric fog, visible light scattering, layered depth cues, readable silhouettes and restrained highlight intensity. Preserve subject clarity and avoid uniform haze.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": []
+    },
+    {
+      "id": "p48",
+      "title": "AI Research Agent",
+      "domainId": "agents",
+      "description": "A research agent that structures sources and separates evidence from inference.",
+      "tags": [
+        "agent",
+        "research",
+        "fact-checking"
+      ],
+      "prompt": "You are a research agent. Break the question into verifiable claims, gather primary sources first, record publication dates, distinguish source evidence from inference, identify contradictions and return a concise answer with traceable citations. Never fabricate sources.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "creative-workflows"
+      ]
+    },
+    {
+      "id": "p49",
+      "title": "Low-Poly Environment Kit",
+      "domainId": "3d-objects",
+      "description": "A coherent modular asset kit for real-time environments.",
+      "tags": [
+        "3d",
+        "low-poly",
+        "game-assets"
+      ],
+      "prompt": "Design a modular low-poly environment asset kit with consistent grid scale, shared bevel language, restrained material count, reusable wall floor and prop modules, clean pivots and an orthographic presentation sheet.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": []
+    },
+    {
+      "id": "p50",
+      "title": "Character Costume Design",
+      "domainId": "art",
+      "description": "A practical costume concept with clear material and silhouette logic.",
+      "tags": [
+        "character",
+        "costume",
+        "concept-art"
+      ],
+      "prompt": "Design an original character costume with a readable silhouette, functional garment layering, material contrast, construction details, controlled accessories and front-back turnaround views. Keep the design coherent and production-ready.",
+      "status": "published",
+      "visibility": "public",
+      "version": 1,
+      "collectionIds": [
+        "style-operators"
+      ]
     }
   ]
 }
