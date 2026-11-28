@@ -682,7 +682,9 @@
       "status": "published",
       "visibility": "public",
       "version": 1,
-      "collectionIds": []
+      "collectionIds": [
+        "creative-workflows"
+      ]
     },
     {
       "id": "p40",
@@ -698,7 +700,9 @@
       "status": "published",
       "visibility": "public",
       "version": 1,
-      "collectionIds": []
+      "collectionIds": [
+        "creative-workflows"
+      ]
     },
     {
       "id": "p41",
@@ -714,7 +718,9 @@
       "status": "published",
       "visibility": "public",
       "version": 1,
-      "collectionIds": []
+      "collectionIds": [
+        "creative-workflows"
+      ]
     },
     {
       "id": "p42",
@@ -826,7 +832,9 @@
       "status": "published",
       "visibility": "public",
       "version": 1,
-      "collectionIds": []
+      "collectionIds": [
+        "creative-workflows"
+      ]
     },
     {
       "id": "p49",
@@ -858,7 +866,9 @@
       "status": "published",
       "visibility": "public",
       "version": 1,
-      "collectionIds": []
+      "collectionIds": [
+        "style-operators"
+      ]
     }
   ]
 }
