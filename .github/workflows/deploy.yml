@@ -9,8 +9,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages-${{ github.event.pull_request.number || github.ref }}
@@ -25,6 +23,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Install validation and browser-test dependencies
+        run: npm install --no-save --no-package-lock ajv@8.17.1 ajv-formats@3.0.1 playwright@1.56.1
       - name: Validate static application and structured content
         run: |
           test -s index.html
@@ -33,9 +33,7 @@ jobs:
           node --check app.js
           node scripts/validate-content.mjs
       - name: Install Playwright Chromium
-        run: |
-          npm install --no-save playwright
-          npx playwright install --with-deps chromium
+        run: npx playwright install --with-deps chromium
       - name: Run browser smoke tests
         run: node tests/browser-smoke.mjs
       - name: Upload Pages artifact
@@ -45,7 +43,10 @@ jobs:
           path: .
 
   deploy:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
