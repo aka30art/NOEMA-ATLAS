@@ -6,11 +6,13 @@ import { chromium } from "playwright";
 
 const root = process.cwd();
 const mime = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json" };
+const basePath = "/NOEMA-ATLAS/";
 const server = http.createServer((req, res) => {
   const pathname = decodeURIComponent(new URL(req.url, "http://localhost").pathname);
-  const requestedPath = pathname === "/" ? "/index.html" : pathname;
-  const file = path.resolve(root, "." + requestedPath);
-  if (!file.startsWith(root + path.sep) && file !== path.join(root, "index.html")) {
+  if (!pathname.startsWith(basePath)) { res.writeHead(404).end("Not found"); return; }
+  const relativePath = pathname.slice(basePath.length) || "index.html";
+  const file = path.resolve(root, relativePath);
+  if (file !== root && !file.startsWith(root + path.sep)) {
     res.writeHead(403).end("Forbidden"); return;
   }
   fs.readFile(file, (error, data) => {
@@ -31,7 +33,12 @@ try {
   const page = await browser.newPage();
   const pageErrors = [];
   page.on("pageerror", error => pageErrors.push(error.message));
-  await page.goto("http://127.0.0.1:4173/", { waitUntil: "networkidle" });
+  const datasetResponses = new Map();
+  page.on("response", response => {
+    const url = new URL(response.url());
+    if (url.pathname.includes("/data/")) datasetResponses.set(url.pathname, response.status());
+  });
+  await page.goto("http://127.0.0.1:4173/NOEMA-ATLAS/", { waitUntil: "networkidle" });
 
   await page.waitForFunction(() => document.querySelectorAll("#cards .card").length > 0);
   assert.equal(await page.title(), "NOEMA ATLAS");
@@ -39,6 +46,9 @@ try {
   assert.equal(await page.locator("#collections-home .collection").count(), 4, "all collections render");
   assert.equal(await page.locator("#cards .card").count(), 12, "all published prompts render");
   assert.equal(await page.locator("#lab-list .lab").count(), 30, "all creative lab references render");
+  assert.equal(await page.locator("#workflow-list .lab").count(), 4, "all workflows render");
+  assert.equal(datasetResponses.size, 7, "all seven JSON datasets load");
+  assert.ok([...datasetResponses].every(([url, status]) => url.startsWith("/NOEMA-ATLAS/data/") && status === 200), "datasets load from the GitHub Pages project path");
   assert.match(await page.locator(".status").innerText(), /SYSTEM ONLINE/);
 
   await page.locator('nav button[data-view="library"]').click();
