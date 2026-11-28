@@ -8,7 +8,8 @@ const root = process.cwd();
 const mime = { ".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json" };
 const server = http.createServer((req, res) => {
   const pathname = decodeURIComponent(new URL(req.url, "http://localhost").pathname);
-  const file = path.resolve(root, "." + pathname);
+  const requestedPath = pathname === "/" ? "/index.html" : pathname;
+  const file = path.resolve(root, "." + requestedPath);
   if (!file.startsWith(root + path.sep) && file !== path.join(root, "index.html")) {
     res.writeHead(403).end("Forbidden"); return;
   }
@@ -56,7 +57,8 @@ try {
 
   await page.locator("#search").fill("cinematic");
   await page.locator('nav button[data-view="library"]').click();
-  assert.ok(await page.locator("#cards .card").count() >= 0);
+  const filteredCount = await page.locator("#cards .card").count();
+  assert.ok(filteredCount > 0 && filteredCount < 12, "global search filters the prompt library");
   assert.deepEqual(pageErrors, [], "no uncaught browser errors");
   console.log("NOEMA ATLAS browser smoke passed: data rendering, prompt detail, save flow, builder, global search and zero page errors.");
 } finally {
