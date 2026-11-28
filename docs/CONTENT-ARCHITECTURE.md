@@ -9,7 +9,7 @@ The catalogue separates two dimensions:
 
 A prompt has one canonical record and may be indexed into multiple collections through `collectionIds`. Each collection maintains the reciprocal `promptIds` index. The content validator checks both sides of this relationship. The library can filter by domain and collection without duplicating prompt records.
 
-The initial catalogue contains 50 published prompt records and six curated collections.
+The expanded catalogue contains 2,400 published public prompt records: at least 200 in each of the 12 domains, plus six curated collections. The original 50 records remain in `data/prompts.json`; domain-specific additions are stored in `data/prompts/<domain-id>.json`. This keeps each file small, makes discipline-level updates reviewable and avoids one oversized catalogue payload.
 
 ## Phase 2A.2
 

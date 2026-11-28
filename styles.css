@@ -4,3 +4,5 @@
 @media(max-width:390px){.domains,.collections,.cards{grid-template-columns:1fr}.hero h1{font-size:43px}}
 
 .collection[data-collection="anime-cartoon"],.collection[data-collection="toys-collectibles"]{border-top:2px solid var(--lime)}
+
+.pagination{display:flex;align-items:center;justify-content:center;gap:14px;padding:24px 0 8px}.pagination button{min-width:112px}.pagination button:disabled{opacity:.35;cursor:not-allowed}.page-status{font:600 10px/1.2 var(--mono,monospace);letter-spacing:.12em;color:var(--muted,#999)}
